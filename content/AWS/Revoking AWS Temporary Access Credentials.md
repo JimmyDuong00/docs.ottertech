@@ -4,9 +4,10 @@ draft: false
 tags:
   - aws
 ---
- 
-The rest of your content lives here. You can use **Markdown** here :)
-In order to revoke Temporary Access Credentials, we need to remove active sessions using the credentials. Running the revoke policy will
+Securing credentials is crucial in preventing unauthorized access to the cloud. In the event that a credential is leaked, follow the steps below.
+
+In order to revoke Temporary Access Credentials, we need to remove active sessions using the credentials. Running the revoke policy will remove any services that are assuming the role therefore, make sure to identify what services or users are using it before beginning the process.
+
 Navigate to IAM and under Access Management, select Roles:
 
 ![[Pasted image 20240702103852.png]]

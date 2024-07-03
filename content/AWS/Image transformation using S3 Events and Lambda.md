@@ -7,6 +7,7 @@ In the S3 portal, click on 'Create bucket' we will need to create 2 buckets:
 ![[Pasted image 20240702113438.png]]
 
 Give it a unique name, I named one 'imagepixelationsource' and 'imagepixelationprocessed':
+
 ![[Pasted image 20240702115102.png]]
 ![[Pasted image 20240702115818.png]]
 
@@ -76,6 +77,7 @@ Make sure to select the source bucket or it may cause an exponential look and in
 #### Assembling everything together
 
 Upload an image into the source bucket and see how the processed bucket will output 5 images with varying degrees of pixelation:
+
 ![[Pasted image 20240702125012.png]]![[Pasted image 20240702125030.png]]
 
 ![[Pasted image 20240702125139.png]]
