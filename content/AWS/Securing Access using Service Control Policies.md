@@ -1,5 +1,5 @@
 ---
-title: Securing Access using service control policies
+title: Securing Access using Service Control Policies
 draft: false
 tags:
   - aws

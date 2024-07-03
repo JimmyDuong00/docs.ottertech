@@ -1,5 +1,5 @@
 ---
-title: AWS Organizations
+title: Creating and Inviting Accounts in AWS Organizations
 draft: false
 tags:
   - aws

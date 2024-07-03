@@ -1,5 +1,5 @@
 ---
-title: Revoking Temporaroy Access Credentials
+title: Revoking AWS Temporary Access Credentials
 draft: false
 tags:
   - aws
