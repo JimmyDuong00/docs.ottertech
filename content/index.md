@@ -1,9 +1,12 @@
 ---
-title: Welcome to OtterDocs
+title: 🦦 Welcome to OtterDocs!
 ---
+This is my personal documentation site on projects I am learning about.
+Feel free to follow along!
 
-This is my personal documentation on projects I am learning about.
+Learn more about me here: ottertech.cloud
 
-About Me
+This site is hosted on Github Pages using Quartz and edited with Obsidian.
+
+Special thanks to Jacky Zhao for creating Quartz! 
 See the [documentation](https://quartz.jzhao.xyz) for how to get started.
-Special thanks to jzhao for creating quartz!
