@@ -102,4 +102,4 @@ A4L instance CPU metrics:
 
 This project covered installing the CloudWatch Agent on an EC2 instance.
 
-[^1] Adrian Cantrill's Lab Commands: https://learn-cantrill-labs.s3.amazonaws.com/awscoursedemos/0013-aws-associate-ec2-cwagent/lesson_commands_AL2023.txt
+[^1]: Adrian Cantrill's Lab Commands: https://learn-cantrill-labs.s3.amazonaws.com/awscoursedemos/0013-aws-associate-ec2-cwagent/lesson_commands_AL2023.txt
