@@ -1,5 +1,5 @@
 ---
-title: 🦦 Welcome to OtterDocs!
+title: Welcome to OtterDocs!
 ---
 This is my personal documentation site on projects I am learning about.
 Feel free to follow along!
