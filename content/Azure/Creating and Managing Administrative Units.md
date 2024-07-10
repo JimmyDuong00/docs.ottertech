@@ -1,3 +1,8 @@
+---
+tags:
+  - iam
+  - azure
+---
 Creating administrative units allows you to better manage the scope of permissions and roles for a set of users.
 
 To start, navigate to [[Entra ID]] and click on 'Add':
