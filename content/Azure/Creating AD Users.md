@@ -40,4 +40,29 @@ The default invite link sends users to https://myapplications.microsoft.com/ :
 
 ![[Pasted image 20240709142232.png]]
 ## Bulk Operations: Create - Invite - Delete
+An admin can speed up user management by utilizing bulk operations. 
 
+![[Pasted image 20240710090900.png]]
+
+If you select an operation, it will allow you to download a .csv file:
+
+![[Pasted image 20240710090832.png]]
+
+In the .csv file, you can fill out entries for multiple users and bulk create, invite, and delete users
+
+> [!info] Per the Azure documentation:
+>If you are adding only one entry using the CSV template, you must preserve row 3 and add your new entry to row 4. 
+>
+>Ensure that you add the `.csv` file extension and remove any leading spaces before `userPrincipalName`, `passwordProfile`, and `accountEnabled`.
+
+![[Pasted image 20240710080332.png]]
+
+Once the file has been filled out, upload the file and click on 'Submit':
+
+![[Pasted image 20240710080700.png]]
+
+We can now see the new users added to Entra ID:
+
+![[Pasted image 20240710090744.png]]
+
+You can now create, invite, and perform bulk operations on users in Entra ID. 
