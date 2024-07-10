@@ -1,4 +1,10 @@
-#iam #azure 
+---
+title: Creating AD Users
+tags:
+  - iam
+  - azure
+---
+
 
 Users are the foundational building block of Azure.
 

@@ -1,3 +1,9 @@
+---
+title: Connecting CloudWatch to EC2 Instances
+tags:
+  - aws
+---
+
 Create an instance and connect to it:
 
 
