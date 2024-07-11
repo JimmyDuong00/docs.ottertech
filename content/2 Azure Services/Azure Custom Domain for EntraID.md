@@ -7,9 +7,11 @@ Navigate to EntraID, select 'Add custom domain' and enter your custom domain in 
 ![[Pasted image 20240709134632.png]]
 
 You will need to verify your TXT record in your custom domain registrar and use the information provided by Azure:
+
 ![[Pasted image 20240709134959.png]]
 
 Information entered in namecheap.com:
+
 ![[Pasted image 20240709135040.png]]
 
 In Azure, select 'Verify' and you will receive a notification of a successful verification (It may take 72 hours):

@@ -9,37 +9,37 @@ Create an instance and connect to it:
 
 run ```sudo dnf install amazon-cloudwatch-agent```:
 
-![[Pasted image 20240703113643.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703113643.png]]
 
 Type ```y``` and hit 'Enter':
 
-![[Pasted image 20240703113759.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703113759.png]]
 
 ## Create an IAM role
 Navigate to IAM and under Access Management, select Roles and click on the 'Create role' button:
 
-![[Pasted image 20240703114111.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703114111.png]]
 
 Select AWS Service and EC2:
 
-![[Pasted image 20240703114211.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703114211.png]]
 
 Search up 'CloudWatchAgentServerPolicy' and 'AmazonSSMFullAccess':
 
-![[Pasted image 20240703114349.png]]
-![[Pasted image 20240703114418.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703114349.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703114418.png]]
 
 Give the role a name and select the 'Create role' button:
 
-![[Pasted image 20240703114613.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703114613.png]]
 
 Navigate back into the EC2 portal and right click the instance, go to Security and choose 'Modify IAM role':
 
-![[Pasted image 20240703114730.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703114730.png]]
 
 Select the role created earlier in the drop down box and select 'Update IAM role':
 
-![[Pasted image 20240703114910.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703114910.png]]
 
 ### Installing the Agent
 Go back into the EC2 instance, run:
@@ -66,7 +66,7 @@ Use the default name.
 
 Once the configuration has been completed, navigate to the SSM in the portal: 
 
-![[Pasted image 20240703120510.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703120510.png]]
 
 This configuration can now be used in any EC2 deployment.
 
@@ -85,26 +85,26 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-c
 ### Checking CloudWatch Logs
 Go to CloudWatch and under log groups you can see the logs that were generated:
 
-![[Pasted image 20240703121833.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703121833.png]]
 
 Select the access_log and choose a stream:
 
-![[Pasted image 20240703122101.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703122101.png]]
 
 You can see all the log events:
 
-![[Pasted image 20240703122208.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703122208.png]]
 
 ### Checking Metrics
 In the CloudWatch page, navigate to 'All metrics' and select 'CWAgent'
-![[Pasted image 20240703122330.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703122330.png]]
 
 Due to installing the CloudWatch agent on the instance, you can now see all the operating system level metrics:
 
-![[Pasted image 20240703122610.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703122610.png]]
 
 A4L instance CPU metrics:
-![[Pasted image 20240703123301.png]]
+![[content/3 AWS Services/Images/Pasted image 20240703123301.png]]
 
 This project covered installing the CloudWatch Agent on an EC2 instance.
 
