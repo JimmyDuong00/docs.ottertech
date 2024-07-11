@@ -10,21 +10,21 @@ In order to revoke Temporary Access Credentials, we need to remove active sessio
 
 Navigate to IAM and under Access Management, select Roles:
 
-![[content/3 AWS Services/Images/Pasted image 20240702103852.png]]
+![[Pasted image 20240702103852 1.png]]
 
 Select the role that was compromised and select 'Revoke sessions':
-![[content/3 AWS Services/Images/Pasted image 20240702103958.png]]
+![[Pasted image 20240702103958 1.png]]
 
 Click on 'Revoke active sessions':
 
-![[content/3 AWS Services/Images/Pasted image 20240702103745.png]]
+![[Pasted image 20240702103745 1.png]]
 
 A green banner will notify you that all active sessions have been revoked:
 
-![[content/3 AWS Services/Images/Pasted image 20240702104131.png]]
+![[Pasted image 20240702104131 1.png]]
 
 If you go back to the permissions tab, you will notice a new policy revoking older sessions:
 
-![[content/3 AWS Services/Images/Pasted image 20240702105458.png]]
+![[Pasted image 20240702105458 1.png]]
 
 Note: If EC2 instances are using the role, restart the instances and it will regenerate a new set of credentials for the service. 
