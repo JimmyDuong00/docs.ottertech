@@ -3,9 +3,10 @@ title: Securing Access using Service Control Policies
 draft: false
 tags:
   - aws
+  - iam
 ---
  
-The rest of your content lives here. You can use **Markdown** here :)We can prevent accounts from accessing services through the use of SCP. 
+We can prevent accounts from accessing services through the use of SCP. 
 
 If you apply a SCP to an Organizational Unit (OU), everything down the tree will be affected.
 

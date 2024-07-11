@@ -3,6 +3,7 @@ title: Creating and Inviting Accounts in AWS Organizations
 draft: false
 tags:
   - aws
+  - iam
 ---
 
 Create or invite other AWS accounts into the organization structure.

@@ -3,6 +3,7 @@ title: Revoking AWS Temporary Access Credentials
 draft: false
 tags:
   - aws
+  - iam
 ---
 Securing credentials is crucial in preventing unauthorized access to the cloud. In the event that a credential is leaked, follow the steps below.
 

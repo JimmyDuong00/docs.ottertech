@@ -1,3 +1,7 @@
+---
+tags:
+  - powershell
+---
 Since the Windows 11 update, viewing the [[Bit Locker]] keys in [[Active Directory Users and Computers]] now requires the use of a PowerShell script to install. 
 
 To begin, open up PowerShell with administrator privileges:

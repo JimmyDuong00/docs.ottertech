@@ -1,3 +1,8 @@
+---
+tags:
+  - iam
+  - azure
+---
 
 In order to implement conditional access policies, we need to disable the default ones put in place by Azure.
 

@@ -1,3 +1,8 @@
+---
+tags:
+  - iam
+  - azure
+---
 Multifactor Authentication allows a more secure access to accounts, confirming the user is who they say they are. 
 
 ## Configuring Multifactor Authentication in Azure
