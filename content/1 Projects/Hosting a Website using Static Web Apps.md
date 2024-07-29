@@ -1,3 +1,6 @@
+---
+draft: true
+---
 This is how you can host a free[^1] website using Azure Static Web Apps and GitHub Actions.
 ## Upload files to GitHub
 
