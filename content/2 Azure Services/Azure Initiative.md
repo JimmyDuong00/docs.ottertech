@@ -1,4 +1,4 @@
-To assign multiple polices at once we can use Initiative.
+To assign multiple [[Azure Policy]] at once, we can use Initiative.
 
 In [[Azure Policy]], navigate to the Definitions and select initiative definition:
 

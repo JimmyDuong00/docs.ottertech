@@ -62,7 +62,7 @@ EC-Council:
 
 Hashicorp:
 
-[[Terraform Associate 003]]
+[[Terraform Associate (003)]]
 
 ISC2:
 
