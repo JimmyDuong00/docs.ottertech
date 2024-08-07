@@ -14,7 +14,7 @@ AWS:
 
 Azure:
 
-[[Azure Sentinel Threat Detection and Map]]
+[[🗺️ Azure Sentinel Threat Detection and Map]]
 
 Terraform:
 Provisioning AWS polices using Terraform
