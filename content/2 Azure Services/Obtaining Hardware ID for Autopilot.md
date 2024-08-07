@@ -1,4 +1,4 @@
-In order to on board an endpoint device, we need to obtain the hardware ID of the device. 
+In order to onboard an endpoint device, we need to obtain the hardware ID of the device. 
 To begin, run PowerShell as Administrator:
 
 ![[Pasted image 20240806074914.png]]
