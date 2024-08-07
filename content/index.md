@@ -14,7 +14,7 @@ AWS:
 
 Azure:
 
-[[Creating a Global Attack Map]]
+[[Azure Sentinel Threat Detection and Map]]
 
 Terraform:
 Provisioning AWS polices using Terraform
