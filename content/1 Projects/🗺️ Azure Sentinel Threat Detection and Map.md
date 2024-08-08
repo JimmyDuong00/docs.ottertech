@@ -80,22 +80,111 @@ To generate security events:
 2. Search for 'Windows Firewall' navigate to 'Windows Firewall Properties':
 ![[Pasted image 20240807141212.png]]
 3.  Turn off all the firewalls for the VM by clicking the drop down and selecting 'Off', repeat this for the public and private profiles. Select apply when done:
+
 ![[Pasted image 20240807141319.png]]
-### Part 5: Kusto Query Language (KQL)  
+
+We will begin to see traffic attempting to RDP into the honeypot:
+
+### Part 5: Using Kusto Query Language (KQL) Queries for EventID
   
 In Sentinel, we can now query for failed RDP attempts:  
   
-1. Go to the "Logs" section.  
+1. Go to the "Logs" section in Azure Sentinel:
+
+![[Pasted image 20240808093158.png]]
+
 2. Use KQL to query for failed RDP attempts (EventID = 4625):  
+
    ```kql  
    SecurityEvent  
    | where EventID == 4625  
-   | project TimeGenerated, Computer, AccountName  
    ```  
-3. This query filters failed logon events and projects the time, computer, and account name.  
+
+![[Pasted image 20240808093116.png]]
+
+3. This query filters failed logon events where the EventID is equal to '4625'.  
+
+![[Pasted image 20240808093547.png]]
+
+4. We can also specify a more specific query to filter out information we don't need:
+
+```kql
+SecurityEvent
+|where EventID == 4625
+|project TimeGenerated, Account,IpAddress, TargetAccount, TargetUserName 
+```
+
+![[Pasted image 20240808094244.png]]
+### Part 6: Generating a Scheduled Task
+In order to setup alerts in Sentinel for events in an endpoint device.
+
+Enable logging for the Event
+
+1. Remote into the honeypot and search for 'Local Security Policy', Select 'Advanced Audit Policy Configuration', 'Object Access', right click on 'Audit Other Object Access Events' and select 'Properties':
+
+![[Pasted image 20240808120432.png]]
   
+2. Select all the checkboxes on the properties page:
+
+![[Pasted image 20240808120708.png]]
+3. Select 'Apply' and 'Ok'.
+
+Creating a Scheduled Task:
+
+1. Search 'Task Scheduler' in the honeypot vm
+2. Select 'Action' and 'Create Task':
+
+![[Pasted image 20240808121204.png]]
+
+3. Give the Task a name and under the 'Configure for' section, select your OS:
+
+![[Pasted image 20240808121435.png]]
+4. On the 'Triggers' tab, select the 'New...' button to create a new trigger. On the right, edit the date to be a couple minutes ahead:
+
+![[Pasted image 20240808121747.png]]
+   
+5. In the 'Actions' tab, create a new action to open Internet Explorer and select 'OK' to save when done:
+
+![[Pasted image 20240808122013.png]]
+
+6. If we go to the Event Viewer, we can look for the EventID '4698' and can see that it has been logged on the system:
+   
+![[Pasted image 20240808122412.png]]
+
+We have now created a scheduled task.
+### Part 7: Writing an Analytics Rule
+Navigate to Sentinel portal and in 'Analytics', create a 'Scheduled query rule':
+
+![[Pasted image 20240808123102.png]]
+
+Give the Analytics Rule a name and description:
+
+![[Pasted image 20240808123339.png]]
+
+We can run a simple query to test if we have data connectivity for this EventID. Note the EventData, we will use this in the next step:
+
+```
+Security Event
+| where EventID == 4698
+```
+
+![[Pasted image 20240808124208.png]]
+
+Using the KQL query from Charles Cyberwox, we are able to have a more simplified view:
+
+![[Pasted image 20240808124444.png]]
+
+In the section below, we can enrich alerts by adding more context to the alert:
+
+![[Pasted image 20240808124914.png]]
+
+For scheduling the queries, we can run it ever 5 minutes:
+
+![[Pasted image 20240808125355.png]]
+
+Now that the rule has been created, go back into the Honeypot machine and create a few more Scheduled Tasks.
+
 ### Part 6: Setup Workbooks
   
 We will create a workbook to display the locations of where the RDP attempts originated from.
-  
 1. 
