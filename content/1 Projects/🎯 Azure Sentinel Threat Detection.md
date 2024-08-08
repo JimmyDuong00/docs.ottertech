@@ -1,14 +1,18 @@
-## Lab Overview  
+## Project Overview  
 As more organizations move toward the cloud, we can utilize Azure Sentinel to help us detect and present this data to enable organizations to effectively respond and remediate incidents in time.
-  
+
+This lab takes inspiration from Charles Q's Azure [Cloud Detection Lab]( https://cyberwoxacademy.com/azure-cloud-detection-lab-project/) from Cyberwox Academy. All credits to Charles and I appreciate his hard work advancing the profession. 
+
+>Note: There are some differences in steps since I plan to add extra functionality to the project later on (Allow * on ASG, Honeypot VM).
+
 In this lab, we will:  
   
-1. **Configure and Deploy Azure Resources**: Set up Honeypot Virtual Machine, Log Analytics Workspace, and Microsoft Sentinel.  
-3. **Data Connectors**: Connect the VM to Sentinel for analysis.  
-5. **Remove Protection** Turn off honeypot firewalls and allow all on Network Security Groups.  
-6. **Utilize KQL**: Query logs using Kusto Query Language.  
-7. **Write Custom Analytic Rules**: Detect specific Microsoft Security Events.   
-## Microsoft Sentinel Lab Network Design & Topology  
+1. Setup Lab Infrastructure: Set up a Honeypot Virtual Machine, Log Analytics Workspace, and Microsoft Sentinel.  
+2. Create Log Analytics Workspace and Deploy Sentinel**: Connect the VM to Sentinel for analysis.  
+3. Exposing Firewalls Turn off Honeypot VM firewalls and allow all on Network Security Groups.  
+4. KQL Queries: Query logs using Kusto Query Language.  
+5. **Generating a Scheduled Task**:  Create a Scheduled task to build data.
+6. **Write Custom Analytic Rules**: Detect specific Microsoft Security Events.   
   
 ### Part 1: Setup Lab Infrastructure  
   
@@ -17,7 +21,7 @@ In this lab, we will:
 Create a free Azure account using [this link](https://azure.microsoft.com/en-us/free/). This process will automatically set up the account and associated Azure Subscription.  
 #### Step 2: Deploy a Virtual Machine  
   
-Deploy a Windows Virtual Machine to collect data, acting as a honeypot.  
+Deploy a Windows Virtual Machine to collect data, acting as a Honeypot.  
   
 1. Navigate to Azure Virtual machines and click "Create".  
 
@@ -29,10 +33,12 @@ Deploy a Windows Virtual Machine to collect data, acting as a honeypot.
 3. Fill out the username and password of the virtual machine, this will be our login credentials when RDP to the machine. Click "Review + create" and then "Create":
 
 ![[Pasted image 20240807131740.png]]
-5. We can now RDP into our virtual machine by typing in our IP address.  
+4. We can now RDP into our virtual machine by typing in our IP address.
+   
 ![[Pasted image 20240807132735.png]]
 
-6. Choose the use a different account option and enter the credentials you created in step 3:
+5. Choose the use a different account option and enter the credentials you created in Step 3:
+   
 ![[Pasted image 20240807133033.png]]
 ### Part 2: Create Log Analytics Workspace and Deploy Sentinel  
   
@@ -41,11 +47,17 @@ Create a Log Analytics Workspace to store and operate log data from Azure resour
 1. Search for "Microsoft Sentinel" in the Azure Portal search bar:
 
 ![[Pasted image 20240807133219.png]]
-2. Follow the prompts to create a Log Analytics Workspace using the same resource group as the VM.  Click “Review and Create” to finalize the workspace.:
+
+2. Follow the prompts to create a Log Analytics Workspace using the same resource group as the VM.  Click “Review and Create” to finalize the workspace:
+ 
 ![[Pasted image 20240807133402.png]]  
-2. Search for Sentinel and select 'Create':
+
+3. Search for Sentinel and select 'Create':
+   
 ![[Pasted image 20240807133754.png]]
- 4. Select the workspace and 'Add': 
+ 
+4. Select the workspace and 'Add': 
+
 ![[Pasted image 20240807133826.png]]
 
 ### Part 3: Getting Data into Sentinel  
@@ -53,37 +65,49 @@ Now that we have the VM running and Sentinel setup, we can import data from the 
 To bring data into Sentinel:  
   
 1. Navigate to the Data Connectors tab in Sentinel and select 'Go to content hub':
+   
 ![[Pasted image 20240807134525.png]]
-1. Search for "Windows Security" and select 'Install/Update':
+
+2. Search for "Windows Security" and select 'Install/Update':
+   
 ![[Pasted image 20240807134713.png]]
 3. After installation, go back to the data connectors tab and click on 'Open connector page':
 ![[Pasted image 20240807134929.png]]
-1. Add a data collection rule, connect it to the resource group, and add the VM as a resource:
+
+3. Add a data collection rule, connect it to the resource group, and add the VM as a resource:
+   
 ![[Pasted image 20240807135010.png]]
-1. Fill in the Subscription and Resource Group we created earlier:
+
+4. Fill in the Subscription and Resource Group we created earlier:
+   
 ![[Pasted image 20240807135119.png]]
 ![[Pasted image 20240807135241.png]]
-Choose 'All security Events':
+
+5. Choose 'All security Events':
 
 ![[Pasted image 20240807135319.png]]
 
-If we go back to the data connectors page, we will see that it is now connected:
+6. If we go back to the data connectors page, we will see that it is now connected:
 
 ![[Pasted image 20240807135623.png]]
 ### Part 4: Exposing Host Firewall to Generate Security Events 
   
-To generate security events:  
+We will expose the Honeypot VM to the public internet generate security events:  
   
 1. Create a rule to allow all access to the NSG.
+
 ![[Pasted image 20240807143902.png]]
-1. Remote back into the VM. 
-2. Search for 'Windows Firewall' navigate to 'Windows Firewall Properties':
+
+2. Remote back into the VM. 
+3. Search for 'Windows Firewall' navigate to 'Windows Firewall Properties':
+   
 ![[Pasted image 20240807141212.png]]
-3.  Turn off all the firewalls for the VM by clicking the drop down and selecting 'Off', repeat this for the public and private profiles. Select apply when done:
+
+4.  Turn off all the firewalls for the VM by clicking the drop down and selecting 'Off', repeat this for the public and private profiles. Select apply when done:
 
 ![[Pasted image 20240807141319.png]]
 
-We will begin to see traffic attempting to RDP into the honeypot:
+All protection has been removed and we will now receive traffic from external sources.
 
 ### Part 5: Using Kusto Query Language (KQL) Queries for EventID
   
@@ -131,7 +155,7 @@ Enable logging for the Event
 
 Creating a Scheduled Task:
 
-1. Search 'Task Scheduler' in the honeypot vm
+1. Search 'Task Scheduler' in the Honeypot VM.
 2. Select 'Action' and 'Create Task':
 
 ![[Pasted image 20240808121204.png]]
@@ -139,6 +163,7 @@ Creating a Scheduled Task:
 3. Give the Task a name and under the 'Configure for' section, select your OS:
 
 ![[Pasted image 20240808121435.png]]
+
 4. On the 'Triggers' tab, select the 'New...' button to create a new trigger. On the right, edit the date to be a couple minutes ahead:
 
 ![[Pasted image 20240808121747.png]]
@@ -153,15 +178,17 @@ Creating a Scheduled Task:
 
 We have now created a scheduled task.
 ### Part 7: Writing an Analytics Rule
-Navigate to Sentinel portal and in 'Analytics', create a 'Scheduled query rule':
+Writing an Analytics Rule will allow us to setup automatic incident alerts in Sentinel. This will streamline incident response and reduce investigation and remediation times.
+
+1. Navigate to Sentinel portal and in 'Analytics', create a 'Scheduled query rule':
 
 ![[Pasted image 20240808123102.png]]
 
-Give the Analytics Rule a name and description:
+2. Give the Analytics Rule a name and description:
 
 ![[Pasted image 20240808123339.png]]
 
-We can run a simple query to test if we have data connectivity for this EventID. Note the EventData, we will use this in the next step:
+3. We can run a simple query to test if we have data connectivity for this EventID. Note the EventData, we will use this in the next step:
 
 ```
 Security Event
@@ -170,21 +197,31 @@ Security Event
 
 ![[Pasted image 20240808124208.png]]
 
-Using the KQL query from Charles Cyberwox, we are able to have a more simplified view:
+4. Using the KQL query from Charles Cyberwox, we are able to have a more simplified view:
 
 ![[Pasted image 20240808124444.png]]
 
-In the section below, we can enrich alerts by adding more context to the alert:
+5. In the section below, we can enrich alerts by adding more context to the alert:
 
 ![[Pasted image 20240808124914.png]]
 
-For scheduling the queries, we can run it ever 5 minutes:
+6. For scheduling the queries, we can run it ever 5 minutes:
 
 ![[Pasted image 20240808125355.png]]
 
-Now that the rule has been created, go back into the Honeypot machine and create a few more Scheduled Tasks.
+7. Now that the rule has been created, go back into the Honeypot machine and create a few more Scheduled Tasks.
 
-### Part 6: Setup Workbooks
-  
-We will create a workbook to display the locations of where the RDP attempts originated from.
-1. 
+8. After waiting for a bit, we can see that Sentinel has alerted us on an incident:
+
+![[Pasted image 20240808130715.png]]
+
+9. Upon clicking on the 'View full details' button, we can see the Account, Host, and the potential malware that was created on the VM:
+
+![[Pasted image 20240808131204.png]]
+
+
+   
+   
+   
+   
+   
