@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 ## Project Overview  
 As more organizations move toward the cloud, we can utilize Azure Sentinel to help us detect and present this data to enable organizations to effectively respond and remediate incidents in time.
 

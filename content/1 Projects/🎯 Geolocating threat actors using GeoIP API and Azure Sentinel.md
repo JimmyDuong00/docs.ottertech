@@ -1,3 +1,8 @@
+---
+tags:
+  - azure
+draft: true
+---
 This post will cover:
 1. Creating a virtual machine and disabling the firewall
 2. Creating a Log Analytics Workspace and Data connectors

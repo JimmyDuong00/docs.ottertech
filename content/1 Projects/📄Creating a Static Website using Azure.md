@@ -1,3 +1,7 @@
+---
+tags:
+  - azure
+---
 This post will cover how to create an Azure static web app using Quartz using Github Pages. 
 This setup will allow you to write and quickly publish your blogs and projects using Markdown files. 
 ### (Optional) Create a Github Account
