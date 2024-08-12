@@ -1,34 +1,34 @@
 ---
 title: Welcome to OtterDocs!
 ---
-This is my personal documentation site on projects I am learning about.
+This is my personal site on projects I am learning about.
 
 Learn more [[About Me]].
 ## Projects
 You can also see various projects I've done in the 'Projects' section in the left column and individual Cloud services and technologies under their respective sections.
 Here are some of my projects I've been working with:
 
-AWS:
+### AWS:
 
 - [[Transforming images using S3 Events and Lambda]]
 
-Azure:
+### Azure:
 
-[[🎯 Azure Sentinel Threat Detection]]
+[[👁️ Azure Sentinel Threat Detection]]
 
-Terraform:
+### Terraform:
 Provisioning AWS polices using Terraform
 ## Education and Certifications
-While hands on skills are more important, credentials and certifications allow us to show that we have a baseline understanding of the various technologies we are test for. 
-Here are some guides on how I was able to study and obtain:
+While hands on skills serve as a better litmus test for our skills, formal credentials and certifications provide a proof of achievement stating that we know the foundational knowledge in the technology. 
 
-Western Governors University:
+Here are some guides and walkthroughs on how I was able to study and obtain these credentials.
+### Western Governors University:
 
 [[Master of Science Cybersecurity and Information Assurance]]
 
 [[Bachelor of Science Cloud Computing]]
 
-Amazon Web Services:
+### Amazon Web Services:
 
 [[AWS Cloud Practitioner]]
 
@@ -38,7 +38,7 @@ Amazon Web Services:
 
 [[AWS Security Specialty Pending]]
 
-Azure:
+### Azure:
 
 [[Azure Security, Compliance, and Identity Fundamentals (SC900)]]
 
@@ -46,7 +46,7 @@ Azure:
 
 [[Azure Security Engineer Associate (AZ500) Pending]]
 
-CompTIA:
+### CompTIA:
 
 [[CompTIA A+]]
 
@@ -56,19 +56,19 @@ CompTIA:
 
 [[CompTIA Cloud+]]
 
-EC-Council:
+### EC-Council:
 
 [[EC-Council Certified Ethical Hacker (CEH)]]
 
-Hashicorp:
+### Hashicorp:
 
 [[Terraform Associate (003)]]
 
-ISC2:
+### ISC2:
 
 [[Certified Information Systems Security Professional (CISSP)]]
 
-Linux Professional Institute:
+### Linux Professional Institute:
 
 [[Linux Essentials (LPI)]]
 
