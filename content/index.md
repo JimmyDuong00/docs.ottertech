@@ -14,7 +14,7 @@ Here are some of my projects I've been working with:
 
 ### Azure:
 
-[[🗺 Azure Sentinel Threat Detection and Map]]
+[[1 Azure Sentinel Threat Detection and Map]]
 
 ### Terraform:
 Provisioning AWS polices using Terraform
