@@ -1,3 +1,7 @@
+---
+tags:
+  - aws
+---
 This project will use S3 events that will trigger a lambda. Every time an image is uploaded, it will trigger the Lambda and pixelizes the image. 
 
 This lab was taken from Adrian Cantrill's course: https://github.com/acantril/learn-cantrill-io-labs/tree/master/00-aws-simple-demos/aws-lambda-s3-events

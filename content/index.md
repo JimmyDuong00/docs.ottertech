@@ -3,7 +3,7 @@ title: Welcome to OtterDocs!
 ---
 This is my personal site on projects I am learning about.
 
-Learn more [[About Me]].
+Learn more [[Start Here!]].
 ## Projects
 You can also see various projects I've done in the 'Projects' section in the left column and individual Cloud services and technologies under their respective sections.
 Here are some of my projects I've been working with:
@@ -14,7 +14,7 @@ Here are some of my projects I've been working with:
 
 ### Azure:
 
-[[👁️ Azure Sentinel Threat Detection]]
+[[🗺 Azure Sentinel Threat Detection and Map]]
 
 ### Terraform:
 Provisioning AWS polices using Terraform

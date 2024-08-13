@@ -1,11 +1,12 @@
 ---
 tags:
   - azure
+  - sentinel
 ---
 ## Project Overview  
 As more organizations move toward the cloud, we can utilize Azure Sentinel to help us detect and present this data to enable organizations to effectively respond and remediate incidents in time.
 
-This lab takes inspiration from Charles Q's Azure [Cloud Detection Lab]( https://cyberwoxacademy.com/azure-cloud-detection-lab-project/) from Cyberwox Academy. All credits to Charles and I appreciate his hard work advancing the profession. 
+This lab takes inspiration from Charles Q's Azure [Cloud Detection Lab]( https://cyberwoxacademy.com/azure-cloud-detection-lab-project/) from Cyberwox Academy and Josh Madakor's Sentinel Map Project. All credits to Charles and Josh I appreciate their hard work advancing the profession. 
 
 >Note: There are some differences in steps since I plan to add extra functionality to the project later on (Allow * on ASG, Honeypot VM).
 
@@ -45,8 +46,6 @@ Deploy a Windows Virtual Machine to collect data, acting as a Honeypot.
    
 ![[Pasted image 20240807133033.png]]
 ### Part 2: Create Log Analytics Workspace and Deploy Sentinel  
-  
-Create a Log Analytics Workspace to store and operate log data from Azure resources.  
   
 1. Search for "Microsoft Sentinel" in the Azure Portal search bar:
 
@@ -94,7 +93,7 @@ To bring data into Sentinel:
 6. If we go back to the data connectors page, we will see that it is now connected:
 
 ![[Pasted image 20240807135623.png]]
-### Part 4: Exposing Host Firewall to Generate Security Events 
+### Part 4: Exposing NSG and Host Firewall to Generate Security Events 
   
 We will expose the Honeypot VM to the public internet generate security events:  
   
@@ -113,37 +112,7 @@ We will expose the Honeypot VM to the public internet generate security events:
 
 All protection has been removed and we will now receive traffic from external sources.
 
-### Part 5: Using Kusto Query Language (KQL) Queries for EventID
-  
-In Sentinel, we can now query for failed RDP attempts:  
-  
-1. Go to the "Logs" section in Azure Sentinel:
-
-![[Pasted image 20240808093158.png]]
-
-2. Use KQL to query for failed RDP attempts (EventID = 4625):  
-
-   ```kql  
-   SecurityEvent  
-   | where EventID == 4625  
-   ```  
-
-![[Pasted image 20240808093116.png]]
-
-3. This query filters failed logon events where the EventID is equal to '4625'.  
-
-![[Pasted image 20240808093547.png]]
-
-4. We can also specify a more specific query to filter out information we don't need:
-
-```kql
-SecurityEvent
-|where EventID == 4625
-|project TimeGenerated, Account,IpAddress, TargetAccount, TargetUserName 
-```
-
-![[Pasted image 20240808094244.png]]
-### Part 6: Generating a Scheduled Task
+### Part 5: Creating a Scheduled Task to Generate Security Events
 In order to setup alerts in Sentinel for events in an endpoint device.
 
 Enable logging for the Event
@@ -181,7 +150,10 @@ Creating a Scheduled Task:
 ![[Pasted image 20240808122412.png]]
 
 We have now created a scheduled task.
-### Part 7: Writing an Analytics Rule
+   
+### Part 6: Test Kusto Query Language (KQL) Queries for EventID
+
+### Part 7: Writing an Analytics Rule for Incident Alerts
 Writing an Analytics Rule will allow us to setup automatic incident alerts in Sentinel. This will streamline incident response and reduce investigation and remediation times.
 
 1. Navigate to Sentinel portal and in 'Analytics', create a 'Scheduled query rule':
@@ -224,8 +196,72 @@ Security Event
 ![[Pasted image 20240808131204.png]]
 
 
+  
+In Sentinel, we can now query for failed RDP attempts:  
+  
+1. Go to the "Logs" section in Azure Sentinel:
+
+![[Pasted image 20240808093158.png]]
+
+2. Use KQL to query for failed RDP attempts (EventID = 4625):  
+
+   ```kql  
+   SecurityEvent  
+   | where EventID == 4625  
+   ```  
+
+![[Pasted image 20240808093116.png]]
+
+3. This query filters failed logon events where the EventID is equal to '4625'.  
+
+![[Pasted image 20240808093547.png]]
+
+4. We can also specify a more specific query to filter out information we don't need:
+
+```kql
+SecurityEvent
+|where EventID == 4625
+|project TimeGenerated, Account,IpAddress, TargetAccount, TargetUserName 
+```
+
+![[Pasted image 20240808094244.png]]
+### Part 8: Utilizing Powershell and GeoIP API to Transform Data
+In order to setup alerts in Sentinel for events in an endpoint device.
+
+Enable logging for the Event
+
+1. Remote into the honeypot and search for 'Local Security Policy', Select 'Advanced Audit Policy Configuration', 'Object Access', right click on 'Audit Other Object Access Events' and select 'Properties':
+
+![[Pasted image 20240808120432.png]]
+  
+2. Select all the checkboxes on the properties page:
+
+![[Pasted image 20240808120708.png]]
+3. Select 'Apply' and 'Ok'.
+
+Creating a Scheduled Task:
+
+1. Search 'Task Scheduler' in the Honeypot VM.
+2. Select 'Action' and 'Create Task':
+
+![[Pasted image 20240808121204.png]]
+
+3. Give the Task a name and under the 'Configure for' section, select your OS:
+
+![[Pasted image 20240808121435.png]]
+
+4. On the 'Triggers' tab, select the 'New...' button to create a new trigger. On the right, edit the date to be a couple minutes ahead:
+
+![[Pasted image 20240808121747.png]]
    
+5. In the 'Actions' tab, create a new action to open Internet Explorer and select 'OK' to save when done:
+
+![[Pasted image 20240808122013.png]]
+
+6. If we go to the Event Viewer, we can look for the EventID '4698' and can see that it has been logged on the system:
    
-   
-   
-   
+![[Pasted image 20240808122412.png]]
+
+We have now created a scheduled task.
+
+### Part 8: Creating a Workbook to Display GeoIP Data
