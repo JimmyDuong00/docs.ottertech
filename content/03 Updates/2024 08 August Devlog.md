@@ -8,7 +8,7 @@ This month's objectives:
 I have been studying for it but need to perform more hands on skills to solidify my knowledge.
 ## Build:
 Create more Terraform projects:
-- [[2🔨 (WIP) Using Terraform to Create Web-facing Applications]] (WIP)
+- [[(WIP) Using Terraform to Create Web-facing Applications]] (WIP)
 - Storing State and Secrets in AWS
 - Azure Infra Project
 

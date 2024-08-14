@@ -8,3 +8,6 @@ I have taken a good amount of IT certifications ranging from basic hardware supp
 With the overuse of social media such as LinkedIn and Medium, I wanted to have a little spot on the web to share my monthly goals and updates on the projects I am creating. 
 
 This website is only read by those who are interested in my work and is a more secluded spot on the cyberspace, so thank you for reading this!
+
+## Organization
+This website is organized using the Johnny Decimal System https://johnnydecimal.com/

@@ -1,5 +1,5 @@
 ---
-title: Welcome to OtterDocs!
+title: 00 Welcome to OtterDocs!
 ---
 This is my personal site on projects I am learning about.
 
@@ -10,11 +10,11 @@ Here are some of my projects I've been working with:
 
 ### AWS:
 
-- [[🪣 Transforming images using S3 Events and Lambda]]
+- [[02.03 Transforming images using S3 Events and Lambda]]
 
 ### Azure:
 
-[[1 Azure Sentinel Threat Detection and Map]]
+[[02.01 Azure Sentinel Threat Detection and Map]]
 
 ### Terraform:
 Provisioning AWS polices using Terraform
