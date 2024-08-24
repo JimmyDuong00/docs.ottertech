@@ -4,7 +4,7 @@ As the temperature starts too cool down and end users are beginning to plan for 
 2024.08.11 Took and passed the test around 11pm! 🎊
 
 ### Take the [[Azure Security Engineer Associate (AZ500)]]
-I have been studying for it but need to perform more hands on skills to solidify my knowledge.
+2024.08.11 I have been studying for it but need to perform more hands on skills to solidify my knowledge.
 ## Build:
 ### Terraform projects:
 - [[(WIP) Using Terraform to Create Web-facing Applications]] (WIP)

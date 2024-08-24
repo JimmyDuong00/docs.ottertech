@@ -4,9 +4,20 @@ tags:
   - iam
   - azure
 ---
+## Types of Identities
+In Azure, there are three types of user identities:
+
+##### Cloud Identity
+Users created in [[Entra ID]], completely located in the cloud
+Usually ending with a @onmicrosoft.com
+##### Synchronized Identity
+Identities synced from on-premises [[Active Directory Users and Computers]] through [[02.06 Deploying Entra ID Connect for On prem Active Directory sync]]
+
+##### Guest Identity
+External users from other Identity providers ie. Facebook, Google, or other [[Entra ID]] Tenants
 
 
-Users are the foundational building block of Azure.
+Users are the foundational building block of Azure and serve as the entryway to cloud services into our organization.
 
 ## Create a New User
 
@@ -72,3 +83,8 @@ We can now see the new users added to Entra ID:
 ![[Pasted image 20240710090744.png]]
 
 You can now create, invite, and perform bulk operations on users in Entra ID. 
+
+## Default user role permissions and Guest user access
+Note that when a user is created in [[Entra ID]], they will have default role permissions. You can edit them under the User settings section as well as guest user access:
+
+![[Pasted image 20240824130309.png]]

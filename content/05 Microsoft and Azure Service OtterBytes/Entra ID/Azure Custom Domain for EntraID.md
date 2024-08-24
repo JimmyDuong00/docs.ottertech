@@ -1,3 +1,8 @@
+---
+tags:
+  - az500
+  - azure
+---
 Having a custom domain allows organizations for a more personalized domain when creating user accounts. 
 
 ## Adding a Custom Domain

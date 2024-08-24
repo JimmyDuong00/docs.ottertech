@@ -2,6 +2,8 @@
 tags:
   - iam
   - azure
+  - entraid
+  - az500
 ---
 Multifactor Authentication allows a more secure access to accounts, confirming the user is who they say they are. 
 

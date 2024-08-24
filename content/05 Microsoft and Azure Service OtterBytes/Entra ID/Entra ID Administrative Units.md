@@ -2,6 +2,7 @@
 tags:
   - iam
   - azure
+  - entraid
 ---
 Creating administrative units allows you to better manage the scope of permissions and roles for a set of users.
 

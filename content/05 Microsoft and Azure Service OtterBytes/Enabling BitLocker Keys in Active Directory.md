@@ -29,5 +29,5 @@ Now [[Active Directory Users and Computers]] should have the BitLocker recovery 
 
 ![[Pasted image 20240710122305.png]]
 
-You can now obtain [[Bit Locker]] Keys in [[Active Directory Computers and Users]]. 
+You can now obtain [[Bit Locker]] Keys in [[Active Directory Users and Computers]]. 
 

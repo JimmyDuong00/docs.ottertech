@@ -1,3 +1,9 @@
+---
+tags:
+  - iam
+  - az500
+  - azure
+---
 
 Navigate to Resource groups and select a resource group you want to enable RBAC for:
 
