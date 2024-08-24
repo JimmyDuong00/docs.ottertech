@@ -3,7 +3,7 @@ As the temperature starts too cool down and end users are beginning to plan for 
 ### Take the [[Terraform Associate (003)]]
 2024.08.11 Took and passed the test around 11pm! 🎊
 
-### Take the AZ500 (WIP)
+### Take the [[Azure Security Engineer Associate (AZ500)]]
 I have been studying for it but need to perform more hands on skills to solidify my knowledge.
 ## Build:
 ### Terraform projects:
@@ -11,7 +11,7 @@ I have been studying for it but need to perform more hands on skills to solidify
 - Using S3 and DynamoDB to Store State and Secrets
 ### AzureGoat Project
 Begin documenting AzureGoat deployment, attack, and defense modules:
-- [[02.03.01 AzureGoat Overview]]
+- [[AzureGoat Uncovering Azure Vulnerabilities and Securing Cloud Environments]]
 Attack Modules
 - [[Using Azure Runbooks for Privilege Escalation]]
 

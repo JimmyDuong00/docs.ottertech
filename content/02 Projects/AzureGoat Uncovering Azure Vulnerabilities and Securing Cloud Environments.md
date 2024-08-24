@@ -67,8 +67,8 @@ Make sure to double check in the console if everything has been completely destr
 
 ## Defending
 [[Defending SKL Injection Attacks with Azure Web Application Firewall]]
-[[Defending Storage Accounts
-[[Defending Against Privilege Escalation using Azure Polices and Alerts]]]]
+[[Defending Storage Accounts]]
+[[Defending Against Privilege Escalation using Azure Polices and Alerts]]
 [[Adding security controls into Terraform]]
 
 ## Conclusion and Final Thoughts

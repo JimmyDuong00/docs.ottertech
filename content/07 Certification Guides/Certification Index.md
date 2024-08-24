@@ -20,7 +20,7 @@
 
 [[Azure Administrator Associate (AZ104)]]
 
-[[Azure Security Engineer Associate (AZ500) Pending]]
+[[Azure Security Engineer Associate (AZ500)]]
 
 ### CompTIA:
 

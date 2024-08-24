@@ -1,5 +1,5 @@
 ---
-title: 00 Welcome to OtterDocs!
+title: 00 Welcome to OtterBrain!
 ---
 This is my personal site on projects I am learning about.
 
@@ -11,7 +11,7 @@ Here are some of my projects I've been working with:
 - [[02.03 Transforming images using S3 Events and Lambda]]
 ### Azure:
 - [[02.01 Azure Sentinel Threat Detection and Map]]
-- [[02.03.01 AzureGoat Overview]]
+- [[AzureGoat Uncovering Azure Vulnerabilities and Securing Cloud Environments]]
 ## Education and Certifications
 While hands on skills serve as a better litmus test for our skills, formal credentials and certifications provide a proof of achievement stating that we know the foundational knowledge in the technology. Dive into my tech certification write ups in the [[Certification Index]].
 
