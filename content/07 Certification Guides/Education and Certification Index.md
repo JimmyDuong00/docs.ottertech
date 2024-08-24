@@ -1,8 +1,20 @@
+---
+tags:
+  - aws
+  - azure
+  - isc2
+  - comptia
+  - hashicorp
+  - wgu
+---
+# Schools
 ### Western Governors University:
 
 [[Master of Science Cybersecurity and Information Assurance]]
 
 [[Bachelor of Science Cloud Computing]]
+
+# Certifications
 
 ### Amazon Web Services:
 
@@ -12,7 +24,7 @@
 
 [[AWS SysOps Administrator]]
 
-[[AWS Security Specialty Pending]]
+[[AWS Security Specialty]]
 
 ### Azure:
 

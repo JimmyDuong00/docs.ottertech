@@ -16,7 +16,7 @@ Attack Modules
 - [[Using Azure Runbooks for Privilege Escalation]]
 
 Defense Modules
-### Ottertech Development:
+### OtterTech Development:
 - Update projects
 - Troubleshoot date bug (Date is updated according to GitHub Actions commits, not actual publish date)
 - Create YouTube for video overview for project showcase and follow along

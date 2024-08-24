@@ -13,7 +13,7 @@ Here are some of my projects I've been working with:
 - [[02.01 Azure Sentinel Threat Detection and Map]]
 - [[AzureGoat Uncovering Azure Vulnerabilities and Securing Cloud Environments]]
 ## Education and Certifications
-While hands on skills serve as a better litmus test for our skills, formal credentials and certifications provide a proof of achievement stating that we know the foundational knowledge in the technology. Dive into my tech certification write ups in the [[Certification Index]].
+While hands on skills serve as a better litmus test for our skills, formal credentials and certifications provide a proof of achievement stating that we know the foundational knowledge in the technology. Dive into my tech certification write ups in the [[Education and Certification Index]].
 
 This site is hosted on GitHub Pages using Quartz with markdown text edited with Obsidian.md.
 

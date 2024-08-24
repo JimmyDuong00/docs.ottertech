@@ -1,3 +1,8 @@
+---
+tags:
+  - isc2
+  - iam
+---
 These are the resources I used to study for the CISSP. 
 > [Note] 
 > Please note that this is not an exhaustive list so please look for additional information to supplement your studies. 

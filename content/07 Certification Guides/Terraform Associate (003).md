@@ -1,3 +1,7 @@
+---
+tags:
+  - hashicorp
+---
 Here are some notes for the Terraform Associate Certification
 I am planning to take this test by August 2024. 
 
