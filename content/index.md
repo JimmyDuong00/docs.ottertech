@@ -1,9 +1,11 @@
 ---
 title: 00 Welcome to OtterBrain!
 ---
-This is my personal site on projects I am learning about.
+This is my personal site on projects I am learning and working on.
 
-To earn more [[About Me]].
+Learn more [[About Me]].
+Check out my monthly project updates: [[2024.08 August OtterLog]]
+Learn more about the [[OtterTech Objectives]]
 ## Projects
 You can also see various projects I've done in the 'Projects' section in the left column and learn more on how to implement individual Cloud services and technologies under their respective OtterByte sections.
 Here are some of my projects I've been working with:

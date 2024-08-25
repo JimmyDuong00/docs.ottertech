@@ -2,7 +2,7 @@ Hi! My name is Jimmy Duong and I am a Cloud Security Engineer that is always str
 
 I love creating infrastructure solutions according to best practices and making the cyberspace a more safe and secure experience.  
   
-From architecting and configuring secure environments to incident response and recovery. I have played a dominant role in securing enterprise environments and protecting organizations across various sectors, including renewable energy and education.
+From architecting and configuring secure environments to incident response and recovery. I have played a dominant role in securing enterprise environments and protecting organizations involved with renewable energy and education.
 
 I love to spend my time learning configuring cloud infrastructure and helping others do the same. 
 
