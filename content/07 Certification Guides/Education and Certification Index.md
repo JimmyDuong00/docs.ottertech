@@ -6,6 +6,7 @@ tags:
   - comptia
   - hashicorp
   - wgu
+  - certification
 ---
 # Schools
 ### Western Governors University:

@@ -6,6 +6,6 @@ This is my personal website where I document my technology based projects and st
 
 
 
-This site is built and hosted on Github Pages using Quartz and Obsidian to edit markdown files. 
+This site is built and hosted on GitHub Pages using Quartz and Obsidian to edit markdown files. 
 
 Find more about the creator, Jacky Zhao and Quartz here:  https://quartz.jzhao.xyz/

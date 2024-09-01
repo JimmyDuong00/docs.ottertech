@@ -2,4 +2,5 @@
 tags:
   - linux
   - wgu
+  - certification
 ---

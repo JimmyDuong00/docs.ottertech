@@ -1,6 +1,7 @@
 ---
 tags:
   - comptia
+  - certification
 ---
 
 

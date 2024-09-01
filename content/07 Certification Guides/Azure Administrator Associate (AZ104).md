@@ -1,4 +1,5 @@
 ---
 tags:
   - azure
+  - certification
 ---

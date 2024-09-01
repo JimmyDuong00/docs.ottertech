@@ -2,6 +2,7 @@
 tags:
   - azure
   - iam
+  - certification
 ---
 This certification was very simple.
 
