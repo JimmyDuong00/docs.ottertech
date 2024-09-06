@@ -1,14 +1,18 @@
+# Rapid Response, Lasting Recovery.
+
 Welcome to Project OtterVanguard's writeup!
 
-Website link here: otterhaven.ottertech.cloud
+Website link here: otterhaven.ottertech.cloud (to be added by end of September)
 ## Overview
 This project is split into multiple parts:
 ### [[OtterVanguard Serverless Multi-Tier Web Architecture]]
 OtterVanguard uses AWS serverless services to provide a website to inform the public of current oil spills. Spread simulations for current events and a portal to sign in and search for custom data. The website also includes developer dashboards to monitor website statistics.
 
 Technologies used: React, Amplify, [[S3 (Secure Storage Service)]], Lambda, CloudFront, and Relational Database Service (RDS), AWS Cognito, Prometheus and Grafana
-### [[OtterVanguard Rapid Deployment Control Centers]]
-When an oil spill occurs, OtterVanguard will deploy a control center using Terraform to provision infrastructure. Researchers can run simulations and predict the spread of oil spills. Terraform configuration files are scanned with Aqua Security Trivy to remediate any vulnerabilities.
+### [[OtterVanguard Rapid Response Centers]]
+When an oil spill occurs, OtterVanguard will deploy a control center using Terraform to provision infrastructure. Researchers can run simulations and predict the spread of oil spills.
+
+[[OtterVanguard Terraform Misconfiguration Hunting with Aqua Security Trivy]]
 
 Technologies used: Terraform, Trivy
 ### [[OtterVanguard Identity and Access Management (IAM)]]

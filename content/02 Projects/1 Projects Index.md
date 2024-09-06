@@ -7,11 +7,11 @@ tags:
 [[AzureGoat Uncovering Azure Vulnerabilities and Securing Cloud Environments]]
 [[09 Hosting a Website using Static Web Apps]]
 
-## [[OtterVanguard Sustaining Earth, Protecting Oceans]]
+## [[OtterVanguard]]
 Advancing Research, Safeguarding Seas
 A fully scaled company focused on oil spill prediction, analysis, and incident response. 
 [[OtterVanguard Serverless Multi-Tier Web Infrastructure Architecture]]
-[[OtterVanguard Rapid Deployment Control Centers]]
+[[OtterVanguard Rapid Response Centers]]
 
 ## Active Directory
 
