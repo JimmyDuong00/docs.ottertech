@@ -264,4 +264,3 @@ Creating a Scheduled Task:
 
 We have now created a scheduled task.
 
-### Part 8: Creating a Workbook to Display GeoIP Data

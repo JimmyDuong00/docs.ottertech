@@ -4,7 +4,7 @@ tags:
   - virtualization
 ---
 ## Overview
-This page will show you how to download and install Windows Server 2016. This is a starting point where you can branch out and begin projects such as [[02.05 Deploying an Active Directory Domain Controller]]. 
+This page will show you how to download and install Windows Server 2016. This is a starting point where you can branch out and begin projects such as [[Deploying an Active Directory Domain Controller]]. 
 ## Download the Windows ISO
 Navigate to https://www.microsoft.com/en-us/evalcenter/download-windows-server-2016
 
@@ -83,7 +83,7 @@ Allow the profile to be created and you will be greeted with the Desktop of your
 ## Summary
 Windows is the cornerstone of every organization and learning how to successfully deploy a server that can allow you to setup Active Directory and various other services such as IIS will enable more possibilities to your organization.
 
-If you want to learn how to install Active Directory click here: [[02.05 Deploying an Active Directory Domain Controller]] 
+If you want to learn how to install Active Directory click here: [[Deploying an Active Directory Domain Controller]] 
 
 
 

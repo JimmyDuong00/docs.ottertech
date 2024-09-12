@@ -5,7 +5,6 @@ tags:
   - iam
 ---
 
-
 We will implement Azure's lab on setting up a VPN from Azure to On Premises. https://learn.microsoft.com/en-us/training/modules/security-virtual-networks/6-virtual-wide-area-network
 
 To begin, open up the CloudShell and run ``` Get-AzSubscription``` to see the list of subscriptions:

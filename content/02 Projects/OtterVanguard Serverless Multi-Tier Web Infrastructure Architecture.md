@@ -1,4 +1,4 @@
-This post will cover the public web architecture for [[OtterVanguard]].
+This post will cover the public web architecture for [[Project OtterVanguard]].
 
 Creating DynamoDB:
 1. Navigate to DynamoDB in the AWS Portal and select 'Create table':

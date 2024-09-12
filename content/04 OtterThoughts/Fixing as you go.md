@@ -1,0 +1,1 @@
+As we are already in the second week of September '24, I'm reorganizing and doing some housekeeping for the  website and found myself faced with the chicken or the egg scenario. "Should I organize the folders first and then do the projects or vice versa?". 

@@ -1,4 +1,4 @@
-Hi! My name is Jimmy Duong and I am a Cloud Security Engineer that is always striving for excellence.   
+Hi I'm Jimmy and I am a Cloud Security Engineer that is always striving for excellence.   
 
 I love creating infrastructure solutions according to best practices and making the cyberspace a more safe and secure experience.  
   

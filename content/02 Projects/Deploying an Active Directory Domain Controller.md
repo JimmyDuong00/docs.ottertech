@@ -5,7 +5,7 @@ tags:
   - iam
 ---
 ## Prerequisites
-This project requires a server or virtual machine that has Windows Server 2016 or 2022 running on it. You can learn how to install it here [[02.04 Installing Windows Server 2016 on VirtualBox]].
+This project requires a server or virtual machine that has Windows Server 2016 or 2022 running on it. You can learn how to install it here [[Installing Windows Server 2016 on VirtualBox]].
 
 Once the server is running, login and we can begin the project. 
 We will be using ottertechadmin for user and password
