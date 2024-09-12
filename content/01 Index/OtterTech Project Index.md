@@ -6,8 +6,7 @@ aliases:
 Welcome to my projects page, feel free to take a look at the various aspects of Cloud, Cybersecurity, and general IT I have worked on to strengthen my hands on skills and gain more insight with various tools and technologies.
 
 Click on each project for more in depth explanations of the architecture and methodologies. 
-##### [[Azure Sentinel Threat Detection]]
-### Project [[Project OtterVanguard]]
+### [[Project OtterVanguard]]
 OtterVanguard is a multi cloud organization that focuses on wildland fires and oceanic oil spills.
 This project covers various aspects of building and securing organization:
 #### [[OtterVanguard Serverless Multi-Tier Web Architecture]]
@@ -47,17 +46,35 @@ Since OtterVanguard uses [[Entra ID]] to provision user accounts, this portion o
 Services used: [[Entra ID]], AWS IAM, RBAC, [[Privileged Identity Management (PIM)]], JIT
 ## In Progress and Planned Projects
 [[Code Vulnerability Scanning using OWASP ZAP & SonarQube]]
+
 [[Connecting Azure to On-Prem Using VPN]]
+
 [[Container orchestration using Docker and Kubernetes]]
-[[Creating a RAID enabled server to store and sync multiple local endpoints using Syncthing]]
+
+[[Building a RAID enabled server tosync multiple local endpoints using Syncthing]]
+
 [[Deploying an Active Directory Domain Controller]]
+
 [[Deploying Entra ID Connect for On prem Active Directory sync]]
+
 [[Installing Windows Server 2016 on VirtualBox]]
 
-## General Cloud Projects
+## Misc. Finished Projects
+[[Azure Sentinel Threat Detection]]
+
 [[Transforming images using S3 Events and Lambda]]
 
 
-## AzureGoat Series
-[[Project AzureGoat Uncovering Azure Vulnerabilities and Securing Cloud Environments]]
+## AzureGoat Series (WIP)
+## [[Project AzureGoat Uncovering Azure Vulnerabilities and Securing Cloud Environments]]
+## Attacking:
+[[Insecure Direct Object Reference]]
+[[Server Side Request Forgery]]
+[[Security Misconfiguration]]
+[[Using Azure Runbooks for Privilege Escalation]]
+
+## Defending
+[[Defending SQL Injection Attacks with Azure Web Application Firewall]]
 [[Defending Storage Accounts]]
+[[Defending Against Privilege Escalation using Azure Polices and Alerts]]
+[[Adding security controls into Terraform]]

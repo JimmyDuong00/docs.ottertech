@@ -6,3 +6,5 @@ title: Philosophy
 > _(Alan Watts)_
 
 I'm still in the process of developing my personal philosophy and as my life progresses, I'm sure I will find and change my perspective along the way. 
+
+As I continue down the journey of OtterTech, I want this website to be continuously flowing, just like the waves of the ocean. Since technology evolves and my perspective changes I will be moving things around, shifting and organizing categories to better fit the concepts I am trying to convey to you. I hope you notice the tide shifting. 

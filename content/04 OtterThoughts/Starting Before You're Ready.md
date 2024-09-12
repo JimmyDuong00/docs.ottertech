@@ -6,7 +6,6 @@ tags:
 When going through my YouTube feed, I saw Matt Huang's video: https://youtu.be/KVyM6LN8DaQ?si=QWMtdIdf9ueq-aoZ
 
 I am always struggling with perfectionism. Continuously revisioning a project until it becomes perfect before I can show the world the final product. This results in lots of effort lost due to constant revisioning with no concrete completion or milestones reached. 
-
 #### Case Study: OtterTech
 An example of this would be this very website, I have used many methods of hosting this website until I settled on using Jacky Zhao's quartz. Before this website, I have tried various static site generators:
 
