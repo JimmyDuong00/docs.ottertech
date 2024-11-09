@@ -8,6 +8,7 @@ tags:
   - wgu
   - certification
 ---
+This index is for all my credentials I have earned over the years. I hope my experience can help you on your journey!
 # Schools
 ### Western Governors University:
 
@@ -61,6 +62,15 @@ tags:
 
 [[Linux Essentials (LPI)]]
 
+### SailPoint
+Identity Security Leader
+
+### Okta
 
 
+### CyberArk
+
+### Japanese Proficiency Language Test JLPT
+
+JLPT N4
 

@@ -1,4 +1,6 @@
+Privileged Identity Management or PIM, is a way to allow for organizations to grant users privileged access for a set period of time to access resources. Once the set period passes, they will lose access to the resource.
 
+This will ensure that critical resources are locked down and prevent unauthorized access.
 
 To setup Privileged Identity Management, navigate to the PIM portal and select 'Microsoft Entra roles':
 

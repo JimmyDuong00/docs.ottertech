@@ -11,7 +11,7 @@ In Azure, there are three types of user identities:
 Users created in [[Entra ID]], completely located in the cloud
 Usually ending with a @onmicrosoft.com
 ##### Synchronized Identity
-Identities synced from on-premises [[Active Directory Users and Computers]] through [[Deploying Entra ID Connect for On prem Active Directory sync]]
+Identities synced from on-premises [[Active Directory Users and Computers]] through [[WIP Deploying EntraID Connect for On prem Active Directory sync]]
 
 ##### Guest Identity
 External users from other Identity providers ie. Facebook, Google, or other [[Entra ID]] Tenants

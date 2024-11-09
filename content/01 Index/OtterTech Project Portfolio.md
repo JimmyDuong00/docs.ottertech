@@ -6,7 +6,7 @@ aliases:
 Welcome to my projects page, feel free to take a look at the various aspects of Cloud, Cybersecurity, and general IT I have worked on to strengthen my hands on skills and gain more insight with various tools and technologies.
 
 Click on each project for more in depth explanations of the architecture and methodologies. 
-### [[Project OtterVanguard]]
+### [[WIP Project OtterVanguard]]
 OtterVanguard is a multi cloud organization that focuses on wildland fires and oceanic oil spills.
 This project covers various aspects of building and securing organization:
 #### [[OtterVanguard Serverless Multi-Tier Web Architecture]]
@@ -15,7 +15,7 @@ OtterVanguard uses AWS serverless services to provide a website to inform the pu
 Website link here: vanguard.ottertech.cloud (to be added by end of September)
 
 Technologies used: React, Amplify, [[S3 (Secure Storage Service)]], Lambda, CloudFront, and Relational Database Service (RDS), AWS Cognito, Prometheus and Grafana
-#### [[OtterVanguard Rapid Deployment Computation Centers]]
+#### [[WIP OtterVanguard Rapid Deployment Computation Centers]]
 [[OtterVanguard Terraform Misconfiguration Hunting with Aqua Security Trivy]]
 When an oil spill occurs, OtterVanguard will deploy a control center using Terraform to provision infrastructure. Researchers can run simulations and predict the spread of oil spills.
 
@@ -43,19 +43,19 @@ Since OtterVanguard uses [[Entra ID]] to provision user accounts, this portion o
 
 • Configured Azure PIM for just-in-time (JIT), configuring entitlement management, reducing risks by controlling and monitoring elevated permissions.
 
-Services used: [[Entra ID]], AWS IAM, RBAC, [[Privileged Identity Management (PIM)]], JIT
+Services used: [[Entra ID]], AWS IAM, RBAC, [[⌛ Configuring Privileged Identity Management (PIM) access for critical infrastructure]], JIT
 ## In Progress and Planned Projects
-[[Code Vulnerability Scanning using OWASP ZAP & SonarQube]]
+[[WIP Code Vulnerability Scanning using OWASP ZAP & SonarQube]]
 
-[[Connecting Azure to On-Prem Using VPN]]
+[[WIP Connecting Azure to On-Prem Using VPN]]
 
-[[Container orchestration using Docker and Kubernetes]]
+[[WIP Container orchestration using Docker and Kubernetes]]
 
 [[Building a RAID enabled server tosync multiple local endpoints using Syncthing]]
 
 [[Deploying an Active Directory Domain Controller]]
 
-[[Deploying Entra ID Connect for On prem Active Directory sync]]
+[[WIP Deploying EntraID Connect for On prem Active Directory sync]]
 
 [[Installing Windows Server 2016 on VirtualBox]]
 
@@ -66,7 +66,7 @@ Services used: [[Entra ID]], AWS IAM, RBAC, [[Privileged Identity Management (PI
 
 
 ## AzureGoat Series (WIP)
-## [[Project AzureGoat Uncovering Azure Vulnerabilities and Securing Cloud Environments]]
+## [[WIP Project AzureGoat Uncovering Azure Vulnerabilities and Securing Cloud Environments]]
 ## Attacking:
 [[Insecure Direct Object Reference]]
 [[Server Side Request Forgery]]

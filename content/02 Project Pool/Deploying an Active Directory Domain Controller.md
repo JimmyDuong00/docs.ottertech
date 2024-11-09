@@ -78,3 +78,6 @@ After rebooting, you will be greeted with a login screen with your domain listed
 We can confirm Active Directory has been installed if we go to 'Windows Administrative Tools' and see all the newly installed tools:
 
 ![[Pasted image 20240814142506.png]]
+
+# Summary
+We have now installed ADDS on the the server. 

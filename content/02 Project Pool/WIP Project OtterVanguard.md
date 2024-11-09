@@ -10,7 +10,7 @@ Technologies used: React, Amplify, [[S3 (Secure Storage Service)]], Lambda, Clou
 • Deployed a serverless web facing application to allow for public information, updates, and fire reports (AWS Amplify, Lambda, CloudFront, RDS).
 
 • Set up uptime monitoring with Grafana dashboards and Prometheus for real-time performance tracking for AWS resources (S3, Lambda, Website uptime).
-#### [[OtterVanguard Rapid Deployment Computation Centers]]
+#### [[WIP OtterVanguard Rapid Deployment Computation Centers]]
 When an oil spill occurs, OtterVanguard will deploy a control center using Terraform to provision infrastructure. Researchers can run simulations and predict the spread of oil spills.
 
 [[OtterVanguard Terraform Misconfiguration Hunting with Aqua Security Trivy]]
@@ -43,5 +43,5 @@ Since OtterVanguard uses [[Entra ID]] to provision user accounts, this portion o
 
 • Configured Azure PIM for just-in-time (JIT), configuring entitlement management, reducing risks by controlling and monitoring elevated permissions.
 
-Services used: [[Entra ID]], AWS IAM, RBAC, [[Privileged Identity Management (PIM)]], JIT
+Services used: [[Entra ID]], AWS IAM, RBAC, [[⌛ Configuring Privileged Identity Management (PIM) access for critical infrastructure]], JIT
 

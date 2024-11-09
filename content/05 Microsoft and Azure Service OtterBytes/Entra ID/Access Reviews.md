@@ -3,7 +3,7 @@ tags:
   - azure
   - iam
 ---
-After assigning users a [[Privileged Identity Management (PIM)]] role, we can perform access reviews to ensure that users that need permissions will be allowed access to elevated systems. If not, they will be removed.
+After assigning users a [[⌛ Configuring Privileged Identity Management (PIM) access for critical infrastructure]] role, we can perform access reviews to ensure that users that need permissions will be allowed access to elevated systems. If not, they will be removed.
 
 In [[Entra ID]], navigate to the Identity Governance section:
 
