@@ -3,7 +3,9 @@ tags:
   - moc
 aliases:
 ---
-Welcome to my projects page, feel free to take a look at the various aspects of Cloud, Cybersecurity, and general IT I have worked on to strengthen my hands on skills and gain more insight with various tools and technologies.
+Welcome to my vault!
+
+Feel free to take a look at the various aspects of Cloud, Cybersecurity, and general IT projects I have worked on to strengthen my hands on skills and gain more insight with various tools and technologies.
 
 Click on each project for more in depth explanations of the architecture and methodologies. 
 ### [[WIP Project OtterVanguard]]

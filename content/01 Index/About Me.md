@@ -8,8 +8,6 @@ I love to spend my time learning configuring cloud infrastructure and helping ot
 
 Check out my projects on the left hand side or search keywords in the search bar (Azure, AWS, IAM)! 
 
-Note: Content bar on left-hand side requires Desktop view
-
 Feel free to reach out to me on LinkedIn! 
 See you in the Cloud! 🦦
 

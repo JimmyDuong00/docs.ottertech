@@ -4,6 +4,7 @@ tags:
   - azure
 ---
 
+# Azure
 
 ## Security
 ### [[Entra ID]]
@@ -21,3 +22,4 @@ tags:
 ## Networking
 
 
+# Office 365

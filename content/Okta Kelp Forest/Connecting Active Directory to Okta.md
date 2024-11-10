@@ -1,3 +1,8 @@
+---
+tags:
+  - iam
+  - okta
+---
 We will connect our on premises Active Directory to Okta to enable for a managed identity provider.
 
 ## Prerequisites:

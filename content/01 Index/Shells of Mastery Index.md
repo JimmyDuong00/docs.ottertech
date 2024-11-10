@@ -7,6 +7,8 @@ tags:
   - hashicorp
   - wgu
   - certification
+  - sailpoint
+  - okta
 ---
 This index is for all my credentials I have earned over the years. I hope my experience can help you on your journey!
 # Schools
@@ -63,7 +65,8 @@ This index is for all my credentials I have earned over the years. I hope my exp
 [[Linux Essentials (LPI)]]
 
 ### SailPoint
-Identity Security Leader
+
+[[Identity Security Leader]]
 
 ### Okta
 
@@ -72,5 +75,5 @@ Identity Security Leader
 
 ### Japanese Proficiency Language Test JLPT
 
-JLPT N4
+[[WIP JLPT N4]]
 
