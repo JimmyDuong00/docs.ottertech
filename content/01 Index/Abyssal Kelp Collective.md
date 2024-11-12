@@ -3,22 +3,27 @@ tags:
   - moc
 aliases:
 ---
+> 
+
 Welcome to my vault!
 
 Feel free to take a look at the various aspects of Cloud, Cybersecurity, and general IT projects I have worked on to strengthen my hands on skills and gain more insight with various tools and technologies.
 
-Click on each project for more in depth explanations of the architecture and methodologies. 
+Click on each project for more in depth explanations of the architecture and methodologies.
+
+### [[content/02 Project Pool/OtterTech Identity Environment|OtterTech Identity Environment]]
+
 ### [[WIP Project OtterVanguard]]
 OtterVanguard is a multi cloud organization that focuses on wildland fires and oceanic oil spills.
 This project covers various aspects of building and securing organization:
-#### [[OtterVanguard Serverless Multi-Tier Web Architecture]]
+#### [[WIP DELETE OtterVanguard Serverless Multi-Tier Web Architecture]]
 OtterVanguard uses AWS serverless services to provide a website to inform the public of current oil spills. Spread simulations for current events and a portal to sign in and search for custom data. The website also includes developer dashboards to monitor website statistics.
 
 Website link here: vanguard.ottertech.cloud (to be added by end of September)
 
 Technologies used: React, Amplify, [[S3 (Secure Storage Service)]], Lambda, CloudFront, and Relational Database Service (RDS), AWS Cognito, Prometheus and Grafana
 #### [[WIP OtterVanguard Rapid Deployment Computation Centers]]
-[[OtterVanguard Terraform Misconfiguration Hunting with Aqua Security Trivy]]
+[[WIP OtterVanguard Terraform Misconfiguration Hunting with Aqua Security Trivy]]
 When an oil spill occurs, OtterVanguard will deploy a control center using Terraform to provision infrastructure. Researchers can run simulations and predict the spread of oil spills.
 
 Uses HashiCorp Configuration Language (HCL) to create an instantly deployable AWS infrastructure closest to the affected region for simulating wildland fires and oil spills. Tested system resilience by performing failover tests to ensure quick recovery from disruptions.
@@ -62,7 +67,7 @@ Services used: [[Entra ID]], AWS IAM, RBAC, [[⌛ Configuring Privileged Identit
 [[Installing Windows Server 2016 on VirtualBox]]
 
 ## Misc. Finished Projects
-[[Azure Sentinel Threat Detection]]
+[[🎯Azure Sentinel Threat Detection]]
 
 [[Transforming images using S3 Events and Lambda]]
 
@@ -73,7 +78,7 @@ Services used: [[Entra ID]], AWS IAM, RBAC, [[⌛ Configuring Privileged Identit
 [[Insecure Direct Object Reference]]
 [[Server Side Request Forgery]]
 [[Security Misconfiguration]]
-[[Using Azure Runbooks for Privilege Escalation]]
+[[WIP Using Azure Runbooks for Privilege Escalation]]
 
 ## Defending
 [[Defending SQL Injection Attacks with Azure Web Application Firewall]]

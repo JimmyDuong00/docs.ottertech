@@ -2,9 +2,9 @@
 tags:
   - aws
 ---
-This project will use S3 events that will trigger a lambda. Every time an image is uploaded, it will trigger the Lambda and pixelizes the image. 
+This project will use S3 events that will trigger a lambda. Every time an image is uploaded, it will trigger the Lambda and transform and make the image pixelized. 
 
-This lab was taken from Adrian Cantrill's course: https://github.com/acantril/learn-cantrill-io-labs/tree/master/00-aws-simple-demos/aws-lambda-s3-events
+This lab was a follow along with Adrian Cantrill's course: https://github.com/acantril/learn-cantrill-io-labs/tree/master/00-aws-simple-demos/aws-lambda-s3-events
 #### Create the S3 Buckets
 In the S3 portal, click on 'Create bucket' we will need to create 2 buckets:
 

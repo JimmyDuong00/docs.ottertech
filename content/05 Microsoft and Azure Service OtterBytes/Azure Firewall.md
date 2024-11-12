@@ -6,7 +6,7 @@
 >[!warning] 
 >Deploying this service will incur costs, refer to the footnotes for pricing information from Azure [^1]
 
-Navigate to [[Azure Firewall Manager]] and in the Azure firewalls blade, select 'Create':
+Navigate to [[WIP Azure Firewall Manager]] and in the Azure firewalls blade, select 'Create':
 
 ![[Pasted image 20240717134746.png]]
 

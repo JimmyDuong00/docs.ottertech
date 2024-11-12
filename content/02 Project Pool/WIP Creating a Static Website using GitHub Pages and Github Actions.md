@@ -1,5 +1,6 @@
 ---
-tags: []
+tags:
+  - azure
 ---
 This post will cover how to create a static web app using Quartz using GitHub Action and Pages. 
 This setup will allow you to write and quickly publish your blogs and projects using Markdown files. 
