@@ -16,7 +16,7 @@ Click on each project for more in depth explanations of the architecture and met
 ### [[WIP Project OtterVanguard]]
 OtterVanguard is a multi cloud organization that focuses on wildland fires and oceanic oil spills.
 This project covers various aspects of building and securing organization:
-#### [[WIP DELETE OtterVanguard Serverless Multi-Tier Web Architecture]]
+#### [[WIP OtterVanguard Serverless Multi-Tier Web Architecture]]
 OtterVanguard uses AWS serverless services to provide a website to inform the public of current oil spills. Spread simulations for current events and a portal to sign in and search for custom data. The website also includes developer dashboards to monitor website statistics.
 
 Website link here: vanguard.ottertech.cloud (to be added by end of September)

@@ -1,7 +1,7 @@
 This project is a fully scaled enterprise focused on wildland fire tracking, oil spill prediction, analysis, and incident response.
 ## Overview
 This project covers various aspects of building an organization:
-### [[WIP DELETE OtterVanguard Serverless Multi-Tier Web Architecture]]
+### [[WIP OtterVanguard Serverless Multi-Tier Web Architecture]]
 OtterVanguard uses AWS serverless services to provide a website to inform the public of current oil spills. Spread simulations for current events and a portal to sign in and search for custom data. The website also includes developer dashboards to monitor website statistics.
 
 Website link here: otterhaven.ottertech.cloud (to be added by end of September)

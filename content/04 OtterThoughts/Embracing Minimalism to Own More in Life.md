@@ -13,9 +13,7 @@ Space in this sentence is the physical as well as the mental.
 ### Physical Space
 
 ### Mental Space
-
-
-
+I noticed that after decluttering to the things I only needed, I 
 
 ## Minimalism Definition
 First off, while there are many different interpretations on minimalism, I would like to define what minimalism means to me. 

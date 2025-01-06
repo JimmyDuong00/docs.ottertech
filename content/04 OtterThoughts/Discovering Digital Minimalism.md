@@ -1,0 +1,3 @@
+I wanted to write this since I found that after decluttering all my physical possessions, I still found that I was faced with the ultimate challenge ahead of me, my digital landscape.
+
+Growing up in the age of internet, these devices were always around me. While the wonder of technology fueled my current endeavors, I did not know that this amazing invention would lead to periods of destruction and rebirth. 
