@@ -11,7 +11,7 @@ Feel free to take a look at the various aspects of Cloud, Cybersecurity, and gen
 
 Click on each project for more in depth explanations of the architecture and methodologies.
 
-### [[content/02 Project Pool/OtterTech Identity Environment|OtterTech Identity Environment]]
+### [[WIP OtterTech Identity Environment|WIP OtterTech Identity Environment]]
 
 ### [[WIP Project OtterVanguard]]
 OtterVanguard is a multi cloud organization that focuses on wildland fires and oceanic oil spills.
